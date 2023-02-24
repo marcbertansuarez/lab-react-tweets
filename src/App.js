@@ -39,7 +39,7 @@ function App() {
     <div className="App">
     {tweetsArray.map(elem => {
       return (
-      <Tweet tweet={elem} />
+      <Tweet key={elem.message} tweet={elem} />
     )})}
     </div>
   );
